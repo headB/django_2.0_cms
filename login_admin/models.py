@@ -11,7 +11,10 @@ class admin(models.Model):
     last_login_time = models.DateTimeField()
     department = models.IntegerField()
     email = models.CharField(max_length=255)
-    realname = models.CharField(max_length=255) 
+    realname = models.CharField(max_length=255)
 
-#    def __str__(self):
-#        return admin.username
+    ##尝试写一个登陆验证的方法
+    ##需要传入账号密码来验证
+    ##前端负责验证动态的验证码
+
+

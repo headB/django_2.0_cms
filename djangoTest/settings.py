@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 't$itiol7lqoc5m908zh#%r5*#(r9hpi5#df@s3+ks*j8-_@ah8'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*',]
 
 
 # Application definition
@@ -55,7 +55,9 @@ ROOT_URLCONF = 'djangoTest.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        #'DIRS': [os.path.join(BASE_DIR,'templatesccc'),],
+        'DIRS': [os.path.join(BASE_DIR,'templates'),],
+        #'DIRS': ["login_admin/templdates",],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
