@@ -84,7 +84,7 @@
 
     2. **第二种是,直接在所有的app下面,直接新建static文件夹(一定要这个名字)**,然后模板里面,
         需要先{% load static%} ,然后用的时候是 {% static "xxx.jpg"   %},类似
-        1. 
+        1.  
         ```python 
         <h2>我是一个神奇的存在</h2>
         {% load static %}
