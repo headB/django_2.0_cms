@@ -90,3 +90,20 @@
         {% load static %}
         <img src="{% static "1.jpg" %}" height="600" width="1000">
         ```
+
+8. 现在测试一下get,post操作先.!
+    1. OK!首先得说明一下与URL的区别,就是,URL的话,
+        1. 首先在对应的app底下的urls.py添加接收参数,例如是
+        说明:可以直接格式化这个值,可以使用str,int,
+        ```python
+        path("index/<int:name>",views.xxx)
+        ##这个index后面的值就转换为int类型,并且将这个转换后的值赋值给一个叫name的变量
+        ```
+        2. 然后,在view(控制器)那边,就是对应的处理方法,需要接收上面的值,def xx(request,name)
+        >>>
+            ##然后这个后面必须一一对应好上面定义的变量了,例如上面接收一个新值并且赋值给name,所以这里控制器
+            ##接收的时候就需要代入相同的变量名!
+    2. 如何获取URL的参数呢?
+        1. 直接调用request.GET和request.POST就可以了!!
+
+
