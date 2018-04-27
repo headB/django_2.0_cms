@@ -63,4 +63,16 @@
         2. 可以到settings.py指定一个统一使用的templates
             1. 'DIRS': [os.path.join(BASE_DIR,'templates')],
 7. 现在看看关于static的测试先.
-    1. 
+    1. **第一种可行的方法就是指定一个统一的static(装静态文件的文件夹)的文件夹,**
+        ```python
+        STATICFILES_DIRS = [
+            os.path.join(BASE_DIR, "static"),]
+        ```
+    2. **第二种是,直接在所有的app下面,直接新建static文件夹(一定要这个名字)**,然后模板里面,
+        需要先{% load static%} ,然后用的时候是 {% static "xxx.jpg"   %},类似
+        1. 
+        ```python 
+        <h2>我是一个神奇的存在</h2>
+        {% load static %}
+        <img src="{% static "1.jpg" %}" height="600" width="1000">
+         ```
