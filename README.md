@@ -89,4 +89,4 @@
         <h2>我是一个神奇的存在</h2>
         {% load static %}
         <img src="{% static "1.jpg" %}" height="600" width="1000">
-         ```
+        ```
