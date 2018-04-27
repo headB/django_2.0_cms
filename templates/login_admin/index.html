@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>测试静态资源</title>
+</head>
+<body>
+    <center>
+
+        <h1>测试静态文件资源的加载!</h1>
+
+        <hr>
+
+        <h2>我是一个神奇的存在</h2>
+        {% load static %}
+        <img src="{% static "1.jpg" %}" height="600" width="1000">
+        <!-- <img src='/static/1.jpg' height="800" width="600" > -->
+
+    </center>
+</body>
+</html>

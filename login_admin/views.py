@@ -7,7 +7,7 @@ from login_admin import *
 ##定义一个注册
 def register(request):
     
-    return HttpResponse("hello world")
+    return render(request,'login_admin/index.html')
 
 ##定义一个通过的控制器,就是加入用户前面匹配到一些主要入口.
 
@@ -15,4 +15,4 @@ def register_other(request,**args):
 
     print(args)
 
-    return HttpResponse("Ok了!")
+    return render(request,'login_admin/index.html')
