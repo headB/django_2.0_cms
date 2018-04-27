@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'login_admin',
+    'show_info',
 ]
 
 MIDDLEWARE = [
@@ -127,6 +128,6 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 # STATICFILES_DIRS = [
-#     os.path.join(BASE_DIR, "static"),
-# ]
-#STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+#       os.path.join(BASE_DIR, "static"),
+#   ]
+#STATIC_ROOT = os.path.join(BASE_DIR, 'static')
